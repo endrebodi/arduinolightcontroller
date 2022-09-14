@@ -13,7 +13,7 @@ void setup(){
 }
 void loop(){
 	int a=analogRead(ptc);
-	// If Motion detected 
+	// Motion detected 
 	if (a<25 && digitalRead(irm) == HIGH) {
 		digitalWrite(rel, HIGH);
 		Serial.println("Relay is ON");
